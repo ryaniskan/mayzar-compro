@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Convenience Aliases
+RewriteRule ^login$ admin/login.php [L]
+RewriteRule ^logout$ admin/logout.php [L]
+RewriteRule ^admin/?$ admin/settings.php [L]
+
+# Remove .php extension from URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Redirect from .php to clean URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]

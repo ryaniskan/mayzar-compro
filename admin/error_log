@@ -1,0 +1,6 @@
+[18-Feb-2026 16:42:33 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'acpp2118_acp_rev2.compro_settings' doesn't exist in /home/acpp2118/public_html/dev.acpedia.id/db.php:79
+Stack trace:
+#0 /home/acpp2118/public_html/dev.acpedia.id/db.php(79): PDO->query()
+#1 /home/acpp2118/public_html/dev.acpedia.id/admin/products.php(8): db_get_flat()
+#2 {main}
+  thrown in /home/acpp2118/public_html/dev.acpedia.id/db.php on line 79
