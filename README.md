@@ -59,4 +59,4 @@ Run the automated setup script to install dependencies (PHP, Apache/Nginx, etc.)
 5. Open a Pull Request.
 
 ---
-© 2026 Enterprise Solutions. Built for the modern web.
+© 2026 Mayzar.
